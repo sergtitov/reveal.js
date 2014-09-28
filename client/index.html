@@ -406,7 +406,7 @@ function linkify( selector ) {
 
                 multiplex: {
                     // Example values. To generate your own, see the socket.io server instructions.
-                    secret: '14118698609696908868', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+                    secret: 'null', // Obtained from the socket.io server. Gives this (the master) control of the presentation
                     id: 'eb9ef02c367b666e', // Obtained from socket.io server
                     url: 'revealjs.jit.su:80' // Location of socket.io server
                 },
@@ -420,7 +420,7 @@ function linkify( selector ) {
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
                     { src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
-                    { src: 'plugin/multiplex/master.js', async: true },
+                    { src: 'plugin/multiplex/client.js', async: true },
 				]
             });
 
